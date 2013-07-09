@@ -1,17 +1,55 @@
+/** FONTS TO LOAD **/
+@font-face {
+    font-family: 'OpenSansRegular';
+    src: url('../fonts/OpenSans-Regular-webfont.eot');
+    src: url('../fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Regular-webfont.svg#OpenSansRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansBold';
+    src: url('../fonts/OpenSans-Bold-webfont.eot');
+    src: url('../fonts/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Bold-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Bold-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Bold-webfont.svg#OpenSansBold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'OpenSansLight';
+    src: url('OpenSans-Light-webfont.eot');
+    src: url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('OpenSans-Light-webfont.woff') format('woff'),
+         url('OpenSans-Light-webfont.ttf') format('truetype'),
+         url('OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /**
  * Main styles
  */
 
 body {
-  background-color: #ccc;
+  background-color: #EEF0ED;
   color: #4F4E4E;
-  font-family: 'RobotoRegular', Arial, FreeSans, sans-serif;
+  font-family: 'OpenSansRegular', Arial, FreeSans, sans-serif;
 	font-size:1.0em !important;
 	line-height:1.6em;
 }
 
 #main{
 }
+p{margin-bottom:12px;}
 
 #page{background:#fff;}
 h1 {
@@ -183,12 +221,12 @@ header {
 /* Primary Navigation
 -------------------------------------------------------------- */
 .navigation {
-  background: transparent url(../images/main-sprite.png) repeat-x scroll left top;
+  background: transparent url(../images/sprite.gif) repeat-x scroll left top;
   height: 45px;
   margin-top: -45px;
 }
 nav li{
-  background: transparent url(../images/main-sprite.png) repeat-x scroll left top;
+  background: transparent url(../images/sprite.gif) repeat-x scroll left top;
   float: left;
   height: 45px;
   line-height: 45px;
@@ -277,13 +315,13 @@ nav .sf-menu a, #navigation .sf-menu a:visited  {
 
 }
 nav .sf-menu li {
-  background: transparent url(../images/main-sprite.png) repeat-x scroll left top;
+  background: transparent url(../images/sprite.gif) repeat-x scroll left top;
 }
 nav .sf-menu li li {
-  background: transparent url(../images/main-sprite.png) repeat-x scroll left top;
+  background: transparent url(../images/sprite.gif) repeat-x scroll left top;
 }
 nav .sf-menu li li li {
-  background: transparent url(../images/main-sprite.png) repeat-x scroll left top;
+  background: transparent url(../images/sprite.gif) repeat-x scroll left top;
   top: 0px;
 }
 nav .sf-menu li:hover, #navigation .sf-menu li.sfHover,
@@ -348,7 +386,7 @@ div.messages {
 /* Slide Wrapper
 -------------------------------------------------------------- */
 #banner-wrap {
-  background: transparent url(../images/main-sprite.png) repeat-x scroll center -90px;
+  background: transparent url(../images/sprite.gif) repeat-x scroll center -90px;
   height: 333px;
   overflow: hidden;
   width: 100%;
@@ -382,7 +420,7 @@ div.messages {
   height: 1%;
 }
 #main-wrapper {
-  background: transparent url(../images/content-bg.gif) repeat-x scroll;
+  background: #fff:
   width:100%;
 }
 
@@ -392,9 +430,9 @@ div.messages {
 	*/
 }
 #preface {
-	margin-top:20px;
-  min-height: 150px;
-  * html height: 150px;
+	background:url('../images/preface_bkgrd.jpg') 0 -10px repeat-x;
+	border-top:#CF710C 13px solid;
+	height:245px;
 }
 #preface .block-block {
   padding-top: 5px;
@@ -530,9 +568,9 @@ footer a:hover {
 /** HCC MODS **/
 #home_img{position:relative;}
 #home_img h1{position:absolute; display:inline-block; z-index:100; right:70px; top:100px; width:50%; color:#fff; line-height:1.2em;}
-.preface-1, .preface-2, .preface-3{border:#3D5454 2px solid; margin:0 8px; background:#fff;}
+.preface-1, .preface-2, .preface-3{width:276px; background:#EAEDE9; height:240px;}
 .preface-1 .content, .preface-2 .content, .preface-3 .content{padding:5px 15px 15px;}
-
+.preface-two{margin:0 60px;}
 @font-face {
     font-family: 'RobotoRegular';
     src: url('../fonts/Roboto-Regular-webfont.eot');
