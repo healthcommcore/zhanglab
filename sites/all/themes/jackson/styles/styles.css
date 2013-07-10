@@ -25,11 +25,11 @@
 
 @font-face {
     font-family: 'OpenSansLight';
-    src: url('OpenSans-Light-webfont.eot');
-    src: url('OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
-         url('OpenSans-Light-webfont.woff') format('woff'),
-         url('OpenSans-Light-webfont.ttf') format('truetype'),
-         url('OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
+    src: url('../fonts/OpenSans-Light-webfont.eot');
+    src: url('../fonts/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Light-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Light-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Light-webfont.svg#OpenSansLight') format('svg');
     font-weight: normal;
     font-style: normal;
 
@@ -44,7 +44,7 @@ body {
   color: #4F4E4E;
   font-family: 'OpenSansRegular', Arial, FreeSans, sans-serif;
 	font-size:1.0em !important;
-	line-height:1.6em;
+	line-height:1.55em;
 }
 
 #main{
@@ -53,16 +53,19 @@ p{margin-bottom:12px;}
 
 #page{background:#fff;}
 h1 {
-  font-size: 2.1em;
+	letter-spacing:-.02em;
+  font-size: 2.5em;
   font-weight: normal;
   margin: .5em 0 1.0em;
   color: #3d5454;
 }
 h2 {
-  font-size: 20px;
+  font-size: 1.2em;
+	font-family:'OpenSansBold';
+	text-transform:uppercase;
   font-weight: normal;
-  margin: 5px 0;
-  color: #3d5454;
+  margin: 10px 0;
+  color: #A6B292;
 }
 h3 {
   font-size: 16px;
@@ -110,6 +113,8 @@ ol{
   list-style-type: decimal;
   margin-left: 25px;
 }
+
+strong{font-family:'OpenSansBold';}
 #main ul {
 
 }
@@ -568,9 +573,33 @@ footer a:hover {
 }
 
 /** HCC MODS **/
+table{border-collapse:collapse; margin-bottom:20px;}
+td{padding-bottom:20px; vertical-align:top; !important}
+td img{margin-right:25px;}
 .preface-1, .preface-2, .preface-3{width:276px; background:#EAEDE9; height:240px;}
-.preface-1 .content, .preface-2 .content, .preface-3 .content{padding:5px 15px 15px;}
-.preface-two{margin:0 60px;}
+.preface-1 .content, .preface-2 .content, .preface-3 .content{padding:5px 10px 10px; font-size:1.3em; font-family:'OpenSansLight'; line-height:1.53em;}
+.preface-two{margin:0 66px;}
 .mouse{float:right;}
 .news{width:216px; background:#CAD1BE; padding:10px 30px; margin-top:22px; font-size:0.85em; line-height:1.6em; color:#2B4847;}
 .news h2{color:#D8690E;}
+
+.subnav{background:#fff; border-bottom:#A6B292 1px solid; border-top:#A6B292 1px solid;}
+.subnav h2{display:none;}
+#main .subnav li{list-style:none; list-style-image:none;}
+
+/** footer **/
+.footer{padding-top:20px}
+div.footer_logos{margin:16px 0 0 0;}
+div.footer_logos, div.footer_logos img{float:left;}
+div.footer_logos img{margin-right:40px;}
+div.footer_links{float:right; text-align:right; margin-bottom:40px;}
+div.footer_links nav li{background:none; padding:0 13px; border-right:#57664C 1px solid; height:auto; line-height:1em;}
+div.footer_links nav li:last-child{padding-right:0; border:0;}
+div.footer_links nav a { padding:0; display:inline; text-transform:none;}
+div.footer_links nav ul{float:right; margin:0 0 2px 0;}
+div.footer_links .legal,div.footer_links .legal a, div.footer_links nav a {color:#57664C;}
+div.footer_links .legal{clear:right; font-size:.8em; line-height:1.6em;}
+div.footer_links .legal a{ text-decoration:underline; margin-left:3px;}
+.footer_links:after{clear:both;}
+
+

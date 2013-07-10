@@ -5,7 +5,7 @@
 
 #main{overflow:hidden;}
 
-.page-content{padding:2em 0 4em 0;}
+.page-content{padding:2em 0 6em 0;}
 .no-sidebars .main,
 .no-sidebars .page-content {
   width: 960px;
@@ -36,8 +36,9 @@
   width: 240px;
 }
 .one-sidebar .first-sidebar {
+	background:#E7EED8;
   float: left;
-  width: 170px;
+  width: 230px;
 	padding-bottom:30000px;
 	margin-bottom:-30000px;
 }
@@ -45,11 +46,13 @@
   float: right;
   width: 290px;
 }
+
+
 /**
  * column gutters
  */
 .sidebar-first .page-content .gutter {
-  padding-left: 12px;
+  padding-left: 52px;
 }
 .sidebar-second .page-content .gutter {
   padding-right: 11px;
@@ -59,7 +62,7 @@
   padding-right: 7px;
 }
 .sidebar .gutter {
-  padding: 0 7px 7px;
+  padding: 0;
 }
 /**
  * preface and bottom regions
