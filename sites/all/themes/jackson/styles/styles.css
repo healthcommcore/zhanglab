@@ -35,6 +35,18 @@
 
 }
 
+@font-face {
+    font-family: 'OpenSansItalic';
+    src: url('../fonts/OpenSans-Italic-webfont.eot');
+    src: url('../fonts/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/OpenSans-Italic-webfont.woff') format('woff'),
+         url('../fonts/OpenSans-Italic-webfont.ttf') format('truetype'),
+         url('../fonts/OpenSans-Italic-webfont.svg#OpenSansItalic') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 /**
  * Main styles
  */
@@ -117,6 +129,9 @@ ol{
 }
 
 strong{font-family:'OpenSansBold';}
+em{font-family:'OpenSansItalic';}
+sup{font-size:0.7em; top:-5px; position:relative;}
+
 #main ul {
 
 }
@@ -595,6 +610,7 @@ td img{margin-right:25px;}
 
 .subnav{background:#fff; border-bottom:#A6B292 1px solid; border-top:#A6B292 1px solid;}
 .subnav h2{display:none;}
+.subnav{color:#3D5454;}
 #main .subnav li{list-style:none; list-style-image:none;}
 
 /** footer **/
